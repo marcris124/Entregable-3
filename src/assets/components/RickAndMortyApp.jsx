@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Cards from './Cards';
-
+import imagen2 from '../images/image2.png'
 const RickAndMortyApp = () => {
 
   const [location,setlocation] = useState ({})  
@@ -53,7 +53,7 @@ const changeBodyColors = document.body.style = `background:#05292E`
         
         <>
       <header className='nav-container'>  
-      <img src="../src/assets/images/image2.png" alt="img1" />  
+      <img src={imagen2} alt="img1" />  
 
     <div className='search'>  
 
