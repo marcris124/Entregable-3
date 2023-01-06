@@ -53,7 +53,7 @@ const changeBodyColors = document.body.style = `background:#05292E`
         
         <>
       <header className='nav-container'>  
-      <img src={"/src/assets/images/image2.png"} alt="img1" />  
+      <img src="../src/assets/images/image2.png" alt="img1" />  
 
     <div className='search'>  
 
