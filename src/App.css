@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-container{
+  height: 372px;
+  width: 100%;
+ 
+  background-image:url("https://media.tenor.com/3hIpHNbcVf4AAAAC/rick-and-morty-rick.gif") ;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.search{
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 1rem;
+
+}
+
+.search input{
+  width: 25rem;
+  height: 3rem;
+  border-radius: 7px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 9px solid whitesmoke;
+}
+
+.search button{
+  width: 5rem;
+  height: 40px;
+  border-radius: 7px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  background-color: #062226;
+  color: aliceblue;
+}
+
+.search button:hover{
+  background-image: url("https://i.pinimg.com/originals/97/86/ec/9786ec883756c755df35a331ff902f3b.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px;
+  color: black;
+}
+
+
+.container{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 3rem;
+}
+
+/*INFO*/
+
+.locations{
+
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #062226;
+  gap: 0.5rem;
+}
+
+.info{
+
+  display: flex;
+  align-items: center;
+  width: 13rem;
+  height: 5rem;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  gap: 0.7rem;
+}
+.info p{
+  color: gray;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  
+}
+
+/*Users*/
+
+.population{
+
+  width: 30%;
+  background-color: #062226;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.population img{
+  max-width: 380px;
+  border-radius: 1rem 1rem 0px 0px;
+}
+
+.container-info{
+
+  margin: 0.5rem;
+}
+
+.container-info h2{
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 2px solid #0ff335;
+  color: #FBFBFB;
+}
+
+
+.infoP{
+  margin: 1rem;
+
+}
+
+.infoP p{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7E7E7E;
+}
+
+.infoP h3{
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FBFBFB;
+  
+}
+
+  .status{
+    display: flex;
+    width: 85px;
+    position: relative;
+    top: -290px;
+    left: -1px;
+    height: 36px;
+    background-color: #062226;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.status h3{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FBFBFB;
+}
+
+.cards{
+
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+
+.loading-screen{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://thumbs.gfycat.com/AmusedCreativeHornet-max-1mb.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100vh;
+}
+
+.loading-screen img{
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .nav-container{
+    height: 300px;
+  }
+
+  .nav-container img{
+    width: 315px;
+
+  }
+  .search input{
+    width: 15rem;
+  }
+
+  /*INFO*/
+  .locations{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /*Usesr*/
+  .cards{
+    flex-direction: column;
+  }
+  .population{
+    width: 100%;
+  }
+
+  .loading-screen{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/021/894/025/original/nadir-khabibullin-f1.gif?1573340645");
+    background-size: 1000px 120vh;
+  }
+  
+}
