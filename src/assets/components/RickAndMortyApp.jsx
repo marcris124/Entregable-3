@@ -15,23 +15,22 @@ useEffect(() => {
   axios.get(`https://rickandmortyapi.com/api/location/${idRandom}`)
   .then(res => { setlocation(res.data)
 
-    setTimeout(() => setloading(false), 2000)
-  //  setloading(false)
+   // setTimeout(() => setloading(false), 2000)
+   setloading(false)
 
-  }
-    
-   )
-},[])
+  }  )},[])
 
-console.log(location);
-
+//console.log(location);
  
 
 const searchType = () =>{
   axios.get(`https://rickandmortyapi.com/api/location/${searchId}`)
+
   .then(res => setlocation(res.data))
 
 }
+
+
 
 const changeBodyColors = document.body.style = `background:#05292E` 
 
